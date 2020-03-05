@@ -4,6 +4,9 @@ A dark Aurora Borealis discord theme with blurred elements.
   <img alt=".titleImage-3pXr91" src="https://i.imgur.com/3VQA8BQ.jpg">
 </p>
 ## Downloads
-[Download for BetterDiscord](https://github.com/KorbsStudio/Aurora/downloads/Aurora.theme.css)
-[Download for Powercord](https://github.com/KorbsStudio/Aurora/downloads/Aurora.zip)
+
+[Download for BetterDiscord](https://github.com/KorbsStudio/Aurora/blob/master/downloads/Aurora.theme.css)
+
+[Download for Powercord](https://github.com/KorbsStudio/Aurora/raw/master/downloads/Aurora.zip)
+
 Maintained by Korbs
