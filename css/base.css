@@ -40,6 +40,7 @@ TABLE OF CONTENTS
   3.p. Typing Indicators
   3.q. Tags (x)
   3.s. NSFW Warning
+  3.t. Tags
 4. Channels Area
   4.a. Channels
   4.b. Account Details Container
@@ -1123,6 +1124,22 @@ div[style*="width: 100%; height: 20px"] {
 .gatedContent-3-B7qB:hover {
     transition: transform 150ms;
     transform: translate(-50%, -50%) scale(1.03) !important;
+}
+/* 3.t. Tags */
+.avatar-1BDn8e[src*="273169968202252289"] + h2 > span.username-1A8OIy::after {
+    color: white !important;
+    background: #7289da;
+    content: 'Aurora Maintainer';
+    font-size: .625em;
+    font-weight: 500;
+    height: 1.28em;
+    padding: .072rem .275rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-left: .25rem;
+    text-decoration: none !important;
+    display: inline-block;
 }
 /*============== END OF SECTION ============== */
 
