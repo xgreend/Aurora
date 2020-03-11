@@ -341,7 +341,6 @@ body::before {
     box-shadow: none;
 }
 .buttons-cl5qTG.container-3npvBV:hover {
-    background: var(--hover-color);
     color: white;
     border-radius: 5px;
 }
