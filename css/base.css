@@ -39,6 +39,7 @@ TABLE OF CONTENTS
   3.o. Calls
   3.p. Typing Indicators
   3.q. Tags (x)
+  3.r. Load More Messages
   3.s. NSFW Warning
   3.t. Tags
 4. Channels Area
@@ -113,8 +114,8 @@ TABLE OF CONTENTS
 10. Tag Animations (Animations by EllexideCodes, added here for support on tags.)
    10. Keyframes
 11. Store, Activity, Library, Friends and Server Discovery
-  11.a. Activity
-  11.b. Friends
+  11.a. Friends
+  11.b. Nitro
 12. Out of app areas
   12.a. Login Screen
   12.b. Crash Screen
@@ -334,6 +335,7 @@ body::before {
 
 /*3. Chat*/
 /*3.a. Messages and Codeblocks*/
+
 .buttons-cl5qTG.container-3npvBV {
     margin-top: 32px;
 }
@@ -373,21 +375,14 @@ body::before {
 	margin: 15px 15px 0 25px;
 	border-radius: 5px;
 }
-.spoilerText-3p6IlD.hidden-HHr2R9,
-.spoilerText-3p6IlD {
-  background: transparent !important;
-}
-.spoilerText-3p6IlD.hidden-HHr2R9 .inlineContent-3ZjPuv {
-  opacity: 1;
-  filter: blur(5px);
-}
-.spoilerWarning-2aAZq1 {
-  background-color: rgba(0,0,0,0.5) !important;
-  color: white !important;
-}
-.spoilerContainer-331r0R:hover .spoilerWarning-2aAZq1 {
-  background: var(--main-color) !important;
-}
+
+
+
+
+
+
+
+
 .isLocalBot-38G0P0 {
 	background:transparent !important;
 	box-shadow:none !important;
@@ -677,6 +672,10 @@ form.form-2fGMdU {
 .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb {
     background-image: linear-gradient(45deg, var(--gradient1), var(--gradient2));
     border-color: transparent;
+}
+.scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb {
+    border-color: transparent;
+    background-image: linear-gradient(45deg, var(--gradient1), var(--gradient2));
 }
 /*3.i. Bot Tags*/
 .botTag-2WPJ74 {
@@ -1105,6 +1104,13 @@ div[style*="width: 100%; height: 20px"] {
     padding: 1px 4px;
 }
 */
+/* 3.r. Load More Messages */ 
+.hasMore-3e72_v {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    color: white;
+    box-shadow: none;
+}
 /* 3.s. NSFW Warning OH YEAH */ 
 .gatedContent-3-B7qB {
     background: var(--backdropblurred);
@@ -1127,12 +1133,12 @@ div[style*="width: 100%; height: 20px"] {
 /* 3.t. Tags */
 .avatar-1BDn8e[src*="273169968202252289"] + h2 > span.username-1A8OIy::after {
     color: white !important;
-    background: #7289da;
+    background-color: var(--gradient1);
     content: 'Aurora Maintainer';
     font-size: .625em;
     font-weight: 500;
     height: 1.28em;
-    padding: .072rem .275rem;
+    padding: 0.072rem 0.275rem;
     border-radius: 3px;
     text-transform: uppercase;
     line-height: 1.3;
@@ -1162,6 +1168,9 @@ div[style*="width: 100%; height: 20px"] {
 }
 header.name-IbjUBS.container-2ax-kl {
     color: var(--hover-color) !important;
+}
+.modeMuted-3osy7j .icon-1_QxNX, .modeMuted-3osy7j .name-3_Dsmg {
+    color: rgba(255, 255, 255, 0.25);
 }
 
 .channel-2QD9_O {
@@ -1516,9 +1525,6 @@ body #app-mount .channel-2QD9_O.selected-1HYmZZ a {
 }
 .button-OhfaWu {
     background:transparent !important;
-}
-.listItem-2P_4kh:first-child .wrapper-sa6paO {
-    display:none;
 }
 .circleIconButton-jET_ig {
     margin:0 !important;
@@ -2862,7 +2868,38 @@ label.checkboxWrapper-SkhIWG.alignCenter-MrlN6q {
 	border:none;
 	background:rgba(0,0,0,0.5) !important;
 }
-
+.scroller-2FKFPG.systemPad-3UxEGl.inner-ZyuQk0.slideBody-35BNbg.slideBody-2nMrnU {
+    background: var(--backdrop) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 10000px rgba(0,0,0,0.8), 0px 0px 10px rgba(0,0,0,0.5) !important;
+}
+.wrapper-2ZbzR9.fixClipping-3qAKRb.theme-light.root-1gCeng.fullscreenOnMobile-1bD22y {
+    background: var(--backdrop) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 10000px rgba(0,0,0,0.8), 0px 0px 10px rgba(0,0,0,0.5) !important;
+}
+form.modal-yWgWj-.slide-2pHaq5.size-1WIx1O.fullscreenOnMobile-1aglG_ {
+    background: transparent;
+    left: 0px;
+}
+.theme-light .footer-3rDWdC {
+    background-color: #f6f6f7;
+    -webkit-box-shadow: inset 0 1px 0 rgba(246,246,247,.6);
+    box-shadow: none;
+}
+.theme-light .input-1mgnkM {
+    color: white;
+    border-bottom-color: #e3e5e8;
+}
+form.modal-yWgWj-.slide-2pHaq5.size-3BX7nn.fullscreenOnMobile-1aglG_ {
+    background: transparent;
+    left: 0px;
+}
+.theme-light .input-UJ9Tr3 {
+    color: white;
+}
 /*8.g. Reactions Modal*/
 #app-mount .sidebar-1-SQro {
 	width:100px !important;
@@ -3030,25 +3067,6 @@ other contributors to USRBG.
 }
 .activityProfile-2bJRaP:hover .headerText-1HLrL7:before {
   transform:rotate(90deg);
-}
-.activityProfile-2bJRaP .headerText-1HLrL7:before {
-  content:'';
-  width:20px;
-  height:20px;
-  position:absolute;
-  filter:brightness(2);
-  transform:rotate(180deg);
-  background-repeat:no-repeat !important;
-  background-size:cover;
-  margin-left:650px;
-  margin-top:-10px !important;
-  transition:250ms transform ease;
-  background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iN3B4IiBoZWlnaHQ9IjEwcHgiIHZpZXdCb3g9IjAgMCA3IDEwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4gICAgICAgIDx0aXRsZT5pY29uLWFycm93PC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9IkNvbnRleHQtTWVudXMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHNrZXRjaDp0eXBlPSJNU1BhZ2UiPiAgICAgICAgPGcgaWQ9IkNvbnRleHQtTWVudXMtLS1MaWdodCIgc2tldGNoOnR5cGU9Ik1TQXJ0Ym9hcmRHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTU2My4wMDAwMDAsIC0xNzguMDAwMDAwKSIgZmlsbD0iIzlGQTZCMCI+ICAgICAgICAgICAgPGcgaWQ9IlVzZXItTWVudSIgc2tldGNoOnR5cGU9Ik1TTGF5ZXJHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDExLjAwMDAwMCwgOTUuMDAwMDAwKSI+ICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC0xMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC45NjgwMDAsIDcxLjAwMDAwMCkiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiPiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTE1MC4zMDQyMDcsMTUuNzA3MTA2OCBMMTU0LjI0MDIwNywxOS43MDcxMDY4IEMxNTQuNjI0NDgzLDIwLjA5NzYzMTEgMTU1LjI0NzUxNywyMC4wOTc2MzExIDE1NS42MzE3OTMsMTkuNzA3MTA2OCBMMTU5LjU2Nzc5MywxNS43MDcxMDY4IEMxNTkuOTUyMDY5LDE1LjMxNjU4MjUgMTU5Ljk1MjA2OSwxNC42ODM0MTc1IDE1OS41Njc3OTMsMTQuMjkyODkzMiBDMTU5LjE4MzUxNywxMy45MDIzNjg5IDE1OC41NjA0ODMsMTMuOTAyMzY4OSAxNTguMTc2MjA3LDE0LjI5Mjg5MzIgTDE1NC4yNDAyMDcsMTguMjkyODkzMiBMMTU1LjYzMTc5MywxOC4yOTI4OTMyIEwxNTEuNjk1NzkzLDE0LjI5Mjg5MzIgQzE1MS4zMTE1MTcsMTMuOTAyMzY4OSAxNTAuNjg4NDgzLDEzLjkwMjM2ODkgMTUwLjMwNDIwNywxNC4yOTI4OTMyIEMxNDkuOTE5OTMxLDE0LjY4MzQxNzUgMTQ5LjkxOTkzMSwxNS4zMTY1ODI1IDE1MC4zMDQyMDcsMTUuNzA3MTA2OCBMMTUwLjMwNDIwNywxNS43MDcxMDY4IFoiIGlkPSJpY29uLWFycm93IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNTQuOTM2MDAwLCAxNy4wMDAwMDApIHJvdGF0ZSgtOTAuMDAwMDAwKSB0cmFuc2xhdGUoLTE1NC45MzYwMDAsIC0xNy4wMDAwMDApICI+PC9wYXRoPiAgICAgICAgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+);
-}
-.activityProfile-2bJRaP .nameNormal-2lqVQK {
-  margin-top:-23px;
-  z-index:10000;
-  position:absolute;
 }
 .da-activityProfile:hover {
   height:unset !important;
@@ -3341,10 +3359,7 @@ body #app-mouont .side-8zPYf6 .itemSelected-1qLhcL:hover {
 }
 
 /*9.b.  Buttons and Checkboxes and Switches*/
-.lookFilled-1Gx00P.colorBrand-3pXr91,
-.lookFilled-1Gx00P.colorPrimary-3b3xI6,
-.valueChecked-m-4IJZ,
-.ui-switch.checked {
+.switchEnabled-V2WDBB.switch-3wwwcV.valueChecked-m-4IJZ.value-2hFrkk.sizeDefault-2YlOZr.size-3rFEHg.themeDefault-24hCdX, .flexChild-faoVW3.switchEnabled-V2WDBB.switch-3wwwcV.valueChecked-m-4IJZ.value-2hFrkk.sizeDefault-2YlOZr.size-3rFEHg.themeClear-1EjkE4 {
     background:var(--main-color) !important;
     border-radius: 50px !important;
 }
@@ -3924,7 +3939,7 @@ img[src="/assets/5fb477ca84edd15d9a2888ac28365acd.svg"] {
 
 /*9.u Changelog*/
 .iconWrapper-2OrFZ1.clickable-3rdHwn[aria-label="Help"]:hover::before {
-    content: "What's new in Aurora 2.7 \A- Removed gray background between channels and chat \A- Fixed messages in chat \A- Removed emojis from toolbar on messages \A- Fixed scrollbars \A- Fixed profile covers \A- Fixed reactions \A- Fixed sidebar on settings \A- Fixed profile modals \A- Fixed headers \A- Fixed dropdown menu \A- Removed some seperators \A- Fixed other stuff :) \A- Updated login screen \A- Updated loading screen \A- Themed Server Boot screen \A- Themed new friends list \A- Categories are now green \A- Changed upload modal \A- Updated changloge, that you're reading ;) \A- Now being maintained by Korbs#0001.";
+    content: "What's new in Aurora 2.7.1 \A- You're now able to click on spoilers \A \A What's new in Aurora 2.7 \A- Removed gray background between channels and chat \A- Fixed messages in chat \A- Removed emojis from toolbar on messages \A- Fixed scrollbars \A- Fixed profile covers \A- Fixed reactions \A- Fixed sidebar on settings \A- Fixed profile modals \A- Fixed headers \A- Fixed dropdown menu \A- Removed some seperators \A- Fixed other stuff :) \A- Updated login screen \A- Updated loading screen \A- Themed Server Boot screen \A- Themed new friends list \A- Categories are now green \A- Changed upload modal \A- Updated changloge, that you're reading ;) \A- Now being maintained by Korbs#0001.";
     display: block;
     line-height: 22px;
     font-size: 18px;
@@ -4100,6 +4115,18 @@ img[src="/assets/5fb477ca84edd15d9a2888ac28365acd.svg"] {
 .wrapper-1cBijl {
     border: none;
 }
+/* 11.b. Nitro */
+.applicationStore-1pNvnv {
+    border-radius: 6px!important;
+    background: var(--backdropblurred) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    margin-right: 50px;
+}
+.container-xm7Ad0:before {
+    display: none;
+}
 /*11.e. Server Discovery*/
 .pageWrapper-1PgVDX {
     background:var(--backdropblurred) !important;
@@ -4116,9 +4143,7 @@ img[src*="/assets/9e8f566e6d49e8f4bba138e1d6a50578.svg"] {
     margin-top:300px;
 }
 .bg-AYqtMd {
-    background:var(--main-color);
-    border-radius:0px !important;
-    box-shadow: 0 4px 100px -2px black;
+    display: none;
 }
 .loading-17PYl_ {
   background:rgba(0,0,0,0.5) !important;
@@ -4156,6 +4181,9 @@ img[src*="/assets/9e8f566e6d49e8f4bba138e1d6a50578.svg"] {
 }
 .theme-dark .inset-3sAvek {
     background-color: transparent;
+}
+.theme-dark .sectionSeparator-2OWiNT {
+    display: none;
 }
 /*============== END OF SECTION ============== */
 
@@ -4228,9 +4256,6 @@ form.authBoxExpanded-2jqaBe.authBox-hW6HRx.theme-dark {
 
 .content-1-zrf2:hover {
   transform:scale(1.04);
-}
-.anchor-3Z-8Bb {
-  color:var(--hover-color) !important;
 }
 /*============== END OF SECTION ============== */
 
@@ -4547,3 +4572,5 @@ Also, Thank you DevilBro, for letting me use his SVG's to improve the theme!*/
  	left: 30px;
  	top: 8px;
  }
+
+
