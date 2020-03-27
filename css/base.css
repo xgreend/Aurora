@@ -357,9 +357,14 @@ body::before {
 }
 .message-2qnXI6.cozyMessage-3V1Y8y.wrapper-2a6GCs.cozy-3raOZG.zalgo-jN1Ica {
     background: rgba(0, 0, 0, 0.25);
+    margin: 3px 20px 0px 20px;
+    border-radius: 8px;
+}
+.message-2qnXI6.cozyMessage-3V1Y8y.groupStart-23k01U.wrapper-2a6GCs.cozy-3raOZG.zalgo-jN1Ica {
     margin: 10px 20px 0px 20px;
-    border-radius: 7px;
-    padding: 10px 80px;
+}
+.markup-2BOw-j.messageContent-2qWWxC {
+    margin: 0px 0px 4px -70px;
 }
 .da-containerCozy .inner-zqa7da {
 	background:rgba(0,0,0,0.25) !important;
@@ -558,9 +563,10 @@ form.form-2fGMdU {
 }
 
 /*3.e. Chat Header*/
-.icon-22AiRD {
-    color: white;
+.clickable-3rdHwn .icon-22AiRD {
+    color: white !important;
 }
+
 .iconWrapper-2OrFZ1.clickable-3rdHwn[aria-label="Start Voice Call"]:hover {
     animation:shake 150ms linear infinite;
 }
@@ -776,6 +782,7 @@ form.form-2fGMdU {
 .searchBar-6Kv8R2 {
 	box-shadow:none !important;
 }
+
 .searchBar-2_Yu-C,
 .searchBar-3dMhjb,
 .searchBar-6Kv8R2 .da-searchBarInner,
@@ -851,12 +858,11 @@ div[style*="width: 100%; height: 20px"] {
   height: 100%;
   z-index: 100;
 }
-.search-2oPWTC .searchBar-3dMhjb {
-    width:30px;
-    transition-duration:300ms;
+.search-2oPWTC .DraftEditor-root .public-DraftEditorPlaceholder-root {
+    color: white;
 }
-.search-2oPWTC .searchBar-3dMhjb:hover {
-	width:200px;
+svg.icon-3cZ1F_ {
+    color: white;
 }
 .search-2oPWTC.da-focused .searchBar-3dMhjb {
 	width: 244px !important;
@@ -2094,7 +2100,7 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     background-color:var(--dnd) !important;
 }
 
-/*6.c. Context Menus*/
+/*7.c. Context Menus*/
 .container-3cGP6G {
 	background:rgba(0,0,0,0.5) !important;
 }
@@ -2134,6 +2140,10 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
   margin: 0px;
   padding: 7px 15px;
 }
+.wrapper-35dUTv {
+    display: none;
+}
+
 /*6.d. User Popouts*/
 .theme-dark .footer-1fjuF6 {
     border: none;
@@ -4479,8 +4489,8 @@ form.authBoxExpanded-2jqaBe.authBox-hW6HRx.theme-dark {
 	border-radius:var(--media-roundness) !important;
 }
 img.avatar-1BDn8e.clickable-1bVtEA {
-    margin-left: 8px;
-    margin-top: 7px;
+    margin-left: 4px;
+    margin-top: 2px;
 }
 /*============== END OF SECTION ============== */
 
@@ -4572,5 +4582,4 @@ Also, Thank you DevilBro, for letting me use his SVG's to improve the theme!*/
  	left: 30px;
  	top: 8px;
  }
-
 
