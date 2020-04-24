@@ -4240,17 +4240,6 @@ form.authBoxExpanded-2jqaBe.authBox-hW6HRx.theme-dark {
     background-repeat:no-repeat !important;
     box-shadow:0 0 0 10000px rgba(0,0,0,0.5) !important;
 }
-.problemsText-1Yx-Kl {
-  color:transparent;
-}
-.problemsText-1Yx-Kl:after {
-  content:'Oopsie whoopsie! uwu did we do a fucky wucky? Pwease let us know OwO!';
-  white-space:pre;
-  position:absolute;
-  color:#f04747;
-  font-weight:inherit;
-  left:38%;
-}
 .content-1-zrf2 {
     background: rgba(0,0,0,0.25) !important;
     transition: 150ms all linear;
