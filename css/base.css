@@ -522,7 +522,12 @@ form.form-2fGMdU {
 .chat-3bRxxu form {
 	margin: 4px 25px -5px 25px;
 }
-
+button.buttonWrapper-1ZmCpA.button-38aScr.lookBlank-3eh9lL.colorBrand-3pXr91.grow-q77ONN.noFocus-2C7BQj[aria-label="Open GIF picker"] {
+    display: none;
+}
+button.buttonWrapper-1ZmCpA.button-38aScr.lookBlank-3eh9lL.colorBrand-3pXr91.grow-q77ONN.noFocus-2C7BQj[aria-label="Send a gift"] {
+    display: none;
+}
 .newMessagesBar-mujexs {
     background:var(--main-color);
     border-radius: 5px;
@@ -2453,6 +2458,21 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
 }
 #bda-qem {
 	background:transparent !important;
+}
+.contentWrapper-2txmjs {
+    background-color: var(--main-color-faded);
+}
+.wrapper-2N7X54 {
+    background-color: transparent;
+}
+.header-8ilj5e {
+    box-shadow: none;
+}
+.inspector-sdLnLS.inspector-3LQtX9 {
+    background-color: transparent;
+}
+header.categoryWrapper-UZ5YNj {
+    background-color: transparent;
 }
 /*emoji picker scrollbar and shit*/
 .da-emojiPicker .da-scroller::-webkit-scrollbar-track-piece {
