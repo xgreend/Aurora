@@ -1,6 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
 @import url('https://monstrousdev.github.io/themes/addons/user-tags.css');
-@import url('https://tropix126.github.io/BetterDiscordStuff/blockBetterDocs.css');
+@import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
+::selection {background:var(--main-color-faded) !important;}
+/*	
+/$$$$$$	
+/$$__  $$	
+| $$  \ $$ /$$   /$$  /$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$	
+| $$$$$$$$| $$  | $$ /$$__  $$ /$$__  $$ /$$__  $$|____  $$	
+| $$__  $$| $$  | $$| $$  \__/| $$  \ $$| $$  \__/ /$$$$$$$	
+| $$  | $$| $$  | $$| $$      | $$  | $$| $$      /$$__  $$	
+| $$  | $$|  $$$$$$/| $$      |  $$$$$$/| $$     |  $$$$$$$	
+|__/  |__/ \______/ |__/       \______/ |__/      \_______/	
+*/	
+
+:root {	
+/*Color Variables*/	
+	--main-color: linear-gradient(150deg, var(--gradient1), var(--gradient2)); /*Accent Color of the Theme*/	
+	--gradient1: #3ecc9c; /*First Gradient Color*/	
+	--gradient2: #185a9d; /*Second Gradient Color*/	
+	--hover-color: rgb(67, 206, 162); /*Secondary Accent of the Theme*/	
+	--main-color-faded: rgba(67, 206, 162, 0.2); /*Faded Main Color*/	
+/*Backdrop Variables*/	
+	--backdrop: url(https://i.imgur.com/xcjXx3E.jpg); /*Normal Backdrop*/	
+	--backdropblurred: url(https://i.imgur.com/ExNrzGV.jpg); /*Darker/Blurred Version of Backdrop*/	
+	--backdrop-darkness:transparent; /*Brightness of var(--backdrop);*/	
+/*Roundness Variables*/	
+	--chat-avatar-roundness:5px !important; /*Roundness of chat avatars*/	
+	--media-roundness:50px !important; /*General Roundness*/	
+	--guild-hovered-roundness:12px !important; /*Roundness of servers on hover*/	
+/*Status Variables*/	
+	--online: #43b581 !important; /*Color When someone is Online*/	
+	--idle: #faa61a !important; /*Color When someone is Idle*/	
+	--dnd: #f04747 !important; /*Color When someone is in Do Not Disturb*/	
+	--offline: #636b75 !important; /*Color When someone is offline*/	
+	--invisible: #747f8d !important; /*Color When someone is Invisible*/	
+	--streaming: #643da7 !important; /*Color When someone is Streaming*/	
+}
+
+
 ::selection {background:var(--main-color-faded) !important;}
 /*
   /$$$$$$
@@ -258,7 +295,7 @@ body::before {
     padding-top:0px !important;
 }
 .wordmark-2iDDfm:after {
-    content: 'Aurora v2.7';
+    content: 'Aurora v2.7.2';
     position: absolute !important;
     left: 5px;
     width: 100vw;
@@ -532,12 +569,17 @@ button.buttonWrapper-1ZmCpA.button-38aScr.lookBlank-3eh9lL.colorBrand-3pXr91.gro
     background:var(--main-color);
     border-radius: 5px;
 }
+.inner-zqa7da, .scrollableContainer-2NUZem, .channelTextArea-rNsIhG {
+	background: transparent !important;
+    border-radius: 3px;
+}
 .attachButtonDivider-3Glu60 {
 	display:none;
 }
-.inner-zqa7da, .scrollableContainer-2NUZem, .channelTextArea-rNsIhG {
-	background: transparent !important;
-	border-radius: 3px;
+.attachPopout-36hjtN {
+    background: var(--backdropblurred);
+    background-size: cover;
+    background-position: center;
 }
 .attachButton-1UjEWA:hover:before {
     content:'Attach FIles';
@@ -1940,6 +1982,14 @@ body #app-mount .channel-2QD9_O.selected-1HYmZZ a {
 		transform: scale(0);
 		opacity: 0;}
 }
+div#status-picker {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 7px;
+    backdrop-filter: blur(15px);
+}
+.separator-2I32lJ {
+    display: none;
+}
 .item-1GzJrl .online-2S838R,
 .item-1GzJrl .idle-3DEnRT,
 .item-1GzJrl .dnd-1_xrcq,
@@ -2128,6 +2178,9 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
 	background:rgba(0,0,0,0.75) !important;
 	padding:7px;
 }
+.colorDefault-2K3EoJ.focused-3afm-j {
+    background-color: var(--gradient1);
+}
 @keyframes context-open-new {
   0% {
     transform: scale(1, 0);
@@ -2152,19 +2205,23 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     display: none;
 }
 .styleFlexible-wGDiIL {
-    background-color: rgba(0,0,0,0.5);
+    background-image: var(--backdropblurred);
     border-radius: 5px;
-    backdrop-filter: blur(4px) brightness(0.4);
+    background-size: cover;
+    background-position: center;
 }
 .submenu-2-ysNh {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-image: var(--backdropblurred);
     border-radius: 5px;
+    background-size: cover;
+    background-position: center;
 }
 
 div#guild-header-popout {
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 7px;
-    backdrop-filter: blur(15px);
+    background-image: var(--backdropblurred);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
 }
 
 /*6.d. User Popouts*/
@@ -2352,6 +2409,37 @@ div#guild-header-popout {
 }
 
 /*6.f. Search Popout*/
+.searchResultsWrap-3-pOjs {
+    background-color: transparent;
+}
+.channelSeparator-dTqJ4K:before {
+    display: none;
+}
+.channelName-wvgELL {
+    background: transparent;
+}
+.searchResult-2N9RV4:before, .searchResult-2N9RV4:after {
+    background-image: none;
+}
+.searchResultMessage-30QnSN.hit-1CXhXT {
+    box-shadow: none;
+    background: var(--backdropblurred);
+    border: none;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.searchResultMessage-30QnSN.hit-1CXhXT {
+    padding: 10px 0px 0px 0px !important;
+}
+.searchHeader-1EzJGH {
+    box-shadow: none;
+}
+
+
+
+
 .searchAnswer-3Dz2-q, .searchFilter-2ESiM3 {
 	background:rgba(255,255,255,0.05);
 }
@@ -2489,7 +2577,13 @@ div#guild-header-popout {
 	background:transparent !important;
 }
 .contentWrapper-2txmjs {
-    background-color: var(--main-color-faded);
+    background: var(--backdropblurred);
+}
+.theme-dark .header-1TOWci {
+    box-shadow: none;
+}
+.categoryWrapper-UZ5YNj {
+    background-color: transparent;
 }
 .wrapper-2N7X54 {
     background-color: transparent;
@@ -3998,7 +4092,7 @@ img[src="/assets/5fb477ca84edd15d9a2888ac28365acd.svg"] {
 
 /*9.u Changelog*/
 .iconWrapper-2OrFZ1.clickable-3rdHwn[aria-label="Help"]:hover::before {
-    content: "What's new in Aurora 2.7.1 \A- You're now able to click on spoilers \A \A What's new in Aurora 2.7 \A- Removed gray background between channels and chat \A- Fixed messages in chat \A- Removed emojis from toolbar on messages \A- Fixed scrollbars \A- Fixed profile covers \A- Fixed reactions \A- Fixed sidebar on settings \A- Fixed profile modals \A- Fixed headers \A- Fixed dropdown menu \A- Removed some seperators \A- Fixed other stuff :) \A- Updated login screen \A- Updated loading screen \A- Themed Server Boot screen \A- Themed new friends list \A- Categories are now green \A- Changed upload modal \A- Updated changloge, that you're reading ;) \A- Now being maintained by Korbs#0001.";
+    content: "What's new in Aurora 2.7.2 \A- Removed an import link, no longer needed \A- Fixed import link for covers \A- The search area has been fixed \A- The context menu and other menus have been fixed \A- The new emoji picker has been theme  \A \A What's new in Aurora 2.7.1 \A- You're now able to click on spoilers \A \A What's new in Aurora 2.7 \A- Removed gray background between channels and chat \A- Fixed messages in chat \A- Removed emojis from toolbar on messages \A- Fixed scrollbars \A- Fixed profile covers \A- Fixed reactions \A- Fixed sidebar on settings \A- Fixed profile modals \A- Fixed headers \A- Fixed dropdown menu \A- Removed some seperators \A- Fixed other stuff :) \A- Updated login screen \A- Updated loading screen \A- Themed Server Boot screen \A- Themed new friends list \A- Categories are now green \A- Changed upload modal \A- Updated changloge, that you're reading ;) \A- Now being maintained by Korbs#0001.";
     display: block;
     line-height: 22px;
     font-size: 18px;
@@ -4621,3 +4715,19 @@ Also, Thank you DevilBro, for letting me use his SVG's to improve the theme!*/
  	top: 8px;
  }
 
+
+
+
+
+
+
+
+
+
+
+
+
+ /* - - - - - - */
+ .scroller-305q3I {
+    background-color: transparent;
+}
