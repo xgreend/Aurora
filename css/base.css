@@ -1007,6 +1007,9 @@ svg.icon-3cZ1F_ {
 
 
 /*3.n. Embeds*/
+.wrapperPaused-19pWuK.wrapper-2TxpI8 {
+    width: -webkit-fill-available !important; /* Fix width of video controls in embeds */
+}
 .embed-IeVjo6:hover {
     -webkit-transform: scale(1.03) !important;
     transform: scale(1.03) !important;
