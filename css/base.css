@@ -4708,19 +4708,50 @@ Also, Thank you DevilBro, for letting me use his SVG's to improve the theme!*/
  	top: 8px;
  }
 
-
-
-
-
-
-
-
-
-
-
-
-
  /* - - - - - - */
  .scroller-305q3I {
     background-color: transparent;
+}
+.powercord-entities-manage-tabs {
+    background-color: var(--main-color-faded);
+}
+.theme-dark .selectorSelected-1_M1WV {
+    background-color: var(--main-color-faded);
+}
+.theme-dark .description-11DmNu, .theme-dark .descriptionUsername-J_75O8 {
+    color: white;
+}
+.colorStandard-2KCXvj {
+    color: white;
+}
+.wrapper-2aW0bm {
+    background: transparent;
+    box-shadow: none;
+}
+.wrapper-2aW0bm:hover {
+    box-shadow: none !important;
+}
+.button-1ZiXG9:hover {
+    background-color: transparent;
+}
+.button-1ZiXG9 {
+	color: white;
+}
+.icon-3Gkjwa {
+    width: 16px;
+    height: 16px;
+}
+.buttons-cl5qTG.container-3npvBV {
+    margin-top: 22px;
+}
+.root-3R2ngo.enterDone-2zvtsK {
+    border-radius: 10px;
+}
+.scroller-2FKFPG.perksModal-fSYqOq {
+    background-image: var(--backdropblurred);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.theme-dark .perksModal-fSYqOq {
+	background: transparent;
 }
