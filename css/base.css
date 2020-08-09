@@ -150,6 +150,9 @@ body::before {
   pointer-events: none;
   box-shadow:inset 0 0 0 1000px var(--backdrop-darkness);
 }
+div#app-mount {
+    background: var(--backdrop) !important;
+}
 .layer-3QrUeG,
 .layers-3iHuyZ,
 .container-2lgZY8 {
@@ -1786,7 +1789,7 @@ body #app-mount .channel-2QD9_O.selected-1HYmZZ a {
 
 /*6. Members List*/
 /*6.a. Transparency*/
-.members-1998pB {
+.members-1998pB, .members-1998pB>div {
 	background:transparent !important;
 }
 
