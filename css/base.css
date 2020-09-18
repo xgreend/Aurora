@@ -42,6 +42,8 @@ TABLE OF CONTENTS
   3.r. Load More Messages
   3.s. NSFW Warning
   3.t. Tags
+  3.u. Reply
+  3.v. Threads
 4. Channels Area
   4.a. Channels
   4.b. Account Details Container
@@ -351,6 +353,10 @@ div#app-mount {
 }
 .separator-42rNt0 {
     display: none;
+}
+div#emoji-picker-tab-panel {
+    background: rgba(0,0,0,0.25) !important;
+    border-radius: 5px;
 }
 .emojiButton-jE9tXC.button-1ZiXG9 {
     display: none;
@@ -976,7 +982,7 @@ svg.icon-3cZ1F_ {
 .wrapperPaused-19pWuK.wrapper-2TxpI8 {
     width: -webkit-fill-available !important; /* Fix width of video controls in embeds */
 }
-.embed-IeVjo6:hover {
+.embedWrapper-lXpS3L.embedFull-2tM8--.embed-IeVjo6.markup-2BOw-j:hover {
     -webkit-transform: scale(1.03) !important;
     transform: scale(1.03) !important;
 }
@@ -991,12 +997,12 @@ svg.icon-3cZ1F_ {
     border-radius: 50px !important;
     width: 4px !important;
 }
-.embed-IeVjo6 {
+.embedWrapper-lXpS3L.embedFull-2tM8--.embed-IeVjo6.markup-2BOw-j {
     background-color: rgba(0, 0, 0, 0.66) !important;
     border-color: rgba(0, 0, 0, 0.66) !important;
 }
-.embed-IeVjo6 {
-    border: 1px solid hsla(0,0%,80%,.3);
+.embedWrapper-lXpS3L.embedFull-2tM8--.embed-IeVjo6.markup-2BOw-j {
+    border: 1px solid hsla(0,0%,80%,.3) !important;
     padding: 8px 10px !important;
     -webkit-transition: 200ms cubic-bezier(.2, .11, 0, 1);
     transition: 200ms cubic-bezier(.2, .11, 0, 1) !important;
@@ -1165,18 +1171,41 @@ svg.icon-3cZ1F_ {
     text-decoration: none !important;
     display: inline-block;
 }
+/* 3.u. Reply */
+.container-9gOVw0 {
+    background: var(--main-color);
+    border-radius: 5px;
+    width: fit-content;
+}
+.colorHeaderSecondary-3Sp3Ft {
+    color: white !important;
+}
+.closeButton-3JbGDk {
+    margin-left: 10px;
+}
+/* 3.v. Threads */
+.threadList-YMr2Sv {
+    background: var(--backdrop) !important;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 1000px rgba(0,0,0,0.5) !important;
+    background-size: cover !important;
+    border: none;
+}
+.header-2Pdc8E, .scroller-3L1NsA, .header-bKQ2_s, input.inputDefault-_djjkz.input-cIJ7To {
+    background: transparent;
+}
 /*============== END OF SECTION ============== */
 
 /*4. Channels Area*/
 /*4.a. Channels*/
 .unread-3zKkbm {
-    background-image: linear-gradient(45deg, var(--gradient1), var(--gradient2));
-    width: 225px;
-    margin-top: -16px;
-    margin-left: 8px;
+    background: var(--main-color) !important;
+    border-radius: 4px;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    width: 224px;
     height: 32px;
-    border-radius: 5px;
-    z-index: -1;
     opacity: 0.3;
 }
 .icon-1_QxNX {
@@ -1585,6 +1614,9 @@ body #app-mount .channel-2QD9_O.selected-1HYmZZ a {
 }
 
 /*5.d. Home Icon*/
+.folderIconWrapper-226oVY svg {
+    color: white !important;
+}
 .wrapper-232cHJ {
 	background:var(--main-color) !important;
 }
@@ -1605,9 +1637,11 @@ body #app-mount .channel-2QD9_O.selected-1HYmZZ a {
 }
 
 /*5.e. Tooltips*/
-.da-tooltip {
+.tooltipContent-bqVLWK {
+    color: white !important;
     background: var(--main-color) !important;
-    box-shadow:0px 0px 20px rgba(0,0,0,0.5) !important;
+	box-shadow:0px 0px 20px rgba(0,0,0,0.5) !important;
+	border-radius: 5px;
 }
 @keyframes fadetop {
 	0% {
@@ -2176,20 +2210,20 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     display: none;
 }
 .styleFlexible-wGDiIL {
-    background-image: var(--backdropblurred);
+    background-image: var(--backdropblurred) !important;
     border-radius: 5px;
     background-size: cover;
     background-position: center;
 }
 .submenu-2-ysNh {
-    background-image: var(--backdropblurred);
+    background-image: var(--backdropblurred) !important;
     border-radius: 5px;
     background-size: cover;
     background-position: center;
 }
 
 div#guild-header-popout {
-    background-image: var(--backdropblurred);
+    background-image: var(--backdropblurred) !important;
     border-radius: 5px;
     background-size: cover;
     background-position: center;
@@ -2560,6 +2594,16 @@ div#guild-header-popout {
 }
 
 /*7.i. Emoji Picker*/
+.theme-dark .wrapper-1-Fsb8 {
+    background-color: transparent;
+}
+.wrapper-2Gsate.categoryList-2Kzf65 {
+    background: transparent;
+}
+.inspector-S2gM3e.inspector-3LQtX9 {
+    background: transparent;
+}
+
 .da-emojiPicker .da-scroller::-webkit-scrollbar-thumb {
 	background:var(--hover-color) !important;
 }
@@ -2589,6 +2633,11 @@ div#guild-header-popout {
 }
 header.categoryWrapper-UZ5YNj {
     background-color: transparent;
+}
+.drawerSizingWrapper-17Mss4 {
+    background-color: rgba(0,0,0,0.5) !important;
+    border-color: rgba(0,0,0,0.75) !important;
+    border-radius: 5px;
 }
 /*emoji picker scrollbar and shit*/
 .da-emojiPicker .da-scroller::-webkit-scrollbar-track-piece {
@@ -3098,21 +3147,21 @@ other contributors to USRBG.
     position:relative;
   }
 
-  .userPopout-3XzG_A .wrapper-3t9DeA::before {
-	content: '';
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	pointer-events: none;
-	opacity: .5;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: var(--user-popout-position) center;
-	background-image: var(--user-background);
-	-webkit-mask-image: linear-gradient(#000, transparent);
+.userPopout-3XzG_A .wrapper-3t9DeA::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -86px;
+    width: 260px;
+    height: 300px;
+    z-index: -1;
+    pointer-events: none;
+    opacity: .5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: var(--user-popout-position) center;
+    background-image: var(--user-background);
+    -webkit-mask-image: linear-gradient(#000, transparent);
 }
 
 .userPopout-3XzG_A  .header-2BwW8b,
@@ -4537,15 +4586,15 @@ form.authBoxExpanded-2jqaBe.authBox-hW6HRx.theme-dark {
 	display:none;
 }
 .tooltip-1OS-Ti.right-KM_vfY {
-	animation:faderight 150ms;
+	animation:faderight 150ms !important;
 }
 .dst-tooltip {
-	background-image:var(--main-color);
+	background-image:var(--main-color) !important;
 }
 .metalloriff-changelog-scroller {
 	background:var(--backdrop) !important;
 	background-size:cover !important;
-	box-shadow:inset 0 0 0 1000px rgba(0,0,0,0.5);
+	box-shadow:inset 0 0 0 1000px rgba(0,0,0,0.5) !important;
 }
 
 /*13.h. Reply System*/
@@ -4757,4 +4806,7 @@ Also, Thank you DevilBro, for letting me use his SVG's to improve the theme!*/
 }
 .theme-dark .perksModal-fSYqOq {
 	background: transparent;
+}
+.role-3UN8jj.role-1P70N6 {
+    background: var(--main-color);
 }
