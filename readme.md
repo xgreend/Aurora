@@ -5,7 +5,7 @@ A dark Aurora Borealis discord theme with blurred elements.
 </p>
 
 ## Official Support 
-[Korbs Studio](https://KorbsStudio.com/discord/)'s Discord
+[Black Box](https://discord.gg/TeRQEPb) server
 or you could just report an [issue](https://github.com/KorbsStudio/Aurora/issues) here.
 
 ## Help Maintain Aurora
