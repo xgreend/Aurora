@@ -1,4 +1,5 @@
-# Aurora Theme (Maintained)
+Aurora is no longer maintained by Korbs Studio.
+# Aurora Theme (unmaintained)
 A dark Aurora Borealis discord theme with blurred elements.
 <p align="center">
   <img alt=".titleImage-3pXr91" src="https://i.imgur.com/3VQA8BQ.jpg">
